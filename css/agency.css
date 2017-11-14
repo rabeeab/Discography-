@@ -1,10 +1,13 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #404040;
+  color: #fff;
 }
 .text-muted {
   margin: 5px 0 0 120px;
   text-transform: none;
+  color: #bfbfbf;
 }
 .text-primary {
   color: #fed136;
@@ -12,6 +15,7 @@ body {
 p {
   font-size: 22px;
   line-height: 1.75;
+  text-align: left;
 }
 p.large {
   font-size: 16px;
@@ -35,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #f7f7f7;
+  background-color: #7A7A7A;
 }
 .bg-darkest-gray {
   background-color: #222;
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 .btn-xl {
-  color: #fff;
+  color: #000;
   background-color: #fed136;
   border-color: #fed136;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -123,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #fed136;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #404040;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #fed136;
@@ -184,7 +188,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 header .intro-text {
   padding-top: 100px;
@@ -291,9 +295,8 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  background-color: #fff;
-  text-align: center;
   padding: 25px;
+  background-color: #404040;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
@@ -654,15 +657,15 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   background: #fed136;
 }
 /*selection {
-  text-shadow: none;
-  background: #fed136;
+text-shadow: none;
+background: #fed136;
 }
 img::selection {
-  background: 0 0;
+background: 0 0;
 }*/
-img::-moz-selection {
-  background: 0 0;
-}
-body {
-  /*webkit-tap-highlight-color: #fed136;*/
-}
+  img::-moz-selection {
+    background: 0 0;
+  }
+  body {
+    /*webkit-tap-highlight-color: #fed136;*/
+  }
