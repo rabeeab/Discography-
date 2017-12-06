@@ -182,9 +182,12 @@ h4.service-heading {
   }
 }
 header {
-  /*! background-color: #404040; */
   text-align: center;
   color: #000;
+}
+header img {
+  width: 100%;
+  margin-top: 56px;
 }
 header .intro-text {
   padding-top: 100px;
@@ -228,9 +231,6 @@ header .intro-text .intro-heading {
 }
 section {
   padding: 100px 0;
-}
-#services {
-  /*! background-color: #757575; */
 }
 section h2.section-heading {
   font-size: 40px;
