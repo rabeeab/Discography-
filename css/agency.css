@@ -13,7 +13,7 @@ body {
   color: #1b1b1b;
 }
 p {
-  font-size: 1.4em;
+  font-size: 22px;
   line-height: 1.75;
   text-align: left;
 }
@@ -187,7 +187,7 @@ header {
 }
 header img {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 56px;
 }
 header .intro-text {
   padding-top: 100px;
@@ -227,10 +227,6 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
-  }
-  
-  header img {
-    margin-top:0;
   }
 }
 section {
