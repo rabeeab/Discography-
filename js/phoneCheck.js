@@ -40,18 +40,15 @@ let phone = document.getElementById("phone");
 
 function ghostWrite() {
   phone.nextElementSibling.innerHTML = phoneStatus();
-  console.log("cycle");
 }
 
 function phoneStatus() { //returns a string based wether or not the phone number is valid
 
   if(checkNumber(cleanNumber(phone.value)) == true) {
-    console.log("1");
     return "Number appears to be Valid";
   }
 
   else {
-    console.log("0");
     return "Number is invalid";
   }
 }
