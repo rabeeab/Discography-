@@ -17,13 +17,44 @@ function cleanNumber(number) { //removes junk user might add
   return n; //output cleaned up number
 }
 
-function checkNumber(number) { //validation based on ITU-T E.164
+function checkNumber(number) { //validation based on ITU-T E.164 digit limits
 
-  if((number.length > 15) || (number.length <= 3)) { //rejects invalid & specialized numbers
+  if(number.length > 15) { //rejects invalid numbers
     return false;
   }
 
-  else { //farthest extent of validation possible
+  if(number.length <= 3) { //rejects service numbers
+    return false;
+  }
+
+  if(isNaN(number)) { //rejects text and non number characters
+    return false;
+  }
+
+  else {
     return true;
   }
 }
+
+let phone = document.getElementById("phone");
+
+function ghostWrite() {
+  phone.nextElementSibling.innerHTML = phoneStatus();
+  console.log("cycle");
+}
+
+function phoneStatus() { //returns a string based wether or not the phone number is valid
+
+  if(checkNumber(cleanNumber(phone.value)) == true) {
+    console.log("1");
+    return "Number appears to be Valid";
+  }
+
+  else {
+    console.log("0");
+    return "Number is invalid";
+  }
+}
+
+var cylcle;
+cycle = setInterval(ghostWrite, 1000);
