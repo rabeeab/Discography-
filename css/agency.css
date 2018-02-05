@@ -1,14 +1,20 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: linear-gradient(#fff,#000);
+  /*! background: linear-gradient(#fff,#000); */
   color: #fff;
+  background: #6e6e6e;
 }
 
+#contact, footer {
+  background: #000;
+  }
 nav div.container {
   max-width: 1140px;
 }
-
+p.text-danger {
+  color:#e73c3c !important; /*stops bootstrap from messing with the color*/
+}
 .text-muted {
   color: #fff;
   background-color: #404040;
@@ -41,13 +47,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 h4.service-heading {
-  color: #000;
+  color: #fff;
 }
 .img-centered {
   margin: 0 auto;
 }
 .bg-light-gray {
-  /*! background-color: #7A7A7A; */
+  background-color: #575757;
 }
 .bg-darkest-gray {
   background-color: #222;
@@ -188,7 +194,8 @@ h4.service-heading {
 }
 header {
   text-align: center;
-  color: #000;
+  /*! color: #fff; */
+  background: #727272;
 }
 header img {
   width: 100%;
@@ -237,7 +244,9 @@ header .intro-text .intro-heading {
   header img {
     margin-top:0;
   }
-}
+  #services {
+    background-color: #5d5d5d;
+  }
 section {
   padding: 100px 0;
 }
@@ -245,7 +254,7 @@ section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #000;
+  color: #fff;
 }
 #about h2 {color: #fff;}
 section h3.section-subheading {
@@ -419,6 +428,7 @@ section h3.section-subheading {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
   margin-bottom: 0;
 }
+ 
 @media (min-width:768px) {
   .timeline:before {
   left: 50%;}
@@ -505,6 +515,9 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
+#about {
+  background-color: #373737;
+}
 section#contact {
   /*! background-color: #222; */
   background-image: url(../img/map-image.png);
@@ -556,6 +569,8 @@ section#contact :-ms-input-placeholder {
 }
 section#contact .text-danger {
   color: #e74c3c;
+}
+
 }
 footer {
   padding: 25px 0;
@@ -678,4 +693,8 @@ background: 0 0;
   }
   body {
     /*webkit-tap-highlight-color: #fed136;*/
+  }
+  
+  p.text-danger {
+    color:#fff;
   }
